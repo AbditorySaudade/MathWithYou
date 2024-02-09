@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://u4rgiksn6krt"
+path="res://.godot/imported/storyline theme.mp3-0027be70e47b92c7be04e89314b4e524.mp3str"
+
+[deps]
+
+source_file="res://Game Soundtrack/storyline theme.mp3"
+dest_files=["res://.godot/imported/storyline theme.mp3-0027be70e47b92c7be04e89314b4e524.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

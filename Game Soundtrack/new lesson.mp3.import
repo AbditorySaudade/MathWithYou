@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chmynh21bqcbu"
+path="res://.godot/imported/new lesson.mp3-11791867a3b54c495b481e7e868329f5.mp3str"
+
+[deps]
+
+source_file="res://Game Soundtrack/new lesson.mp3"
+dest_files=["res://.godot/imported/new lesson.mp3-11791867a3b54c495b481e7e868329f5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

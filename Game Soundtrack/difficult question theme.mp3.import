@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c42illtlbvs6n"
+path="res://.godot/imported/difficult question theme.mp3-277862fec35f80b462171c59a279a329.mp3str"
+
+[deps]
+
+source_file="res://Game Soundtrack/difficult question theme.mp3"
+dest_files=["res://.godot/imported/difficult question theme.mp3-277862fec35f80b462171c59a279a329.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

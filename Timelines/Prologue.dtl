@@ -1,0 +1,33 @@
+[music path="res://Game Soundtrack/home theme.mp3" fade="0.0" volume="0.0"]
+[background arg="res://Game Backgrounds/School Building.png" fade="0.0"]
+The buildings stood tall, sunlight shining reflecting upon its windows. Vehicles streamed through the gates, their engines humming as they made their way in and out. 
+The hustle and bustle of students filled the air, their hurried footsteps filling the air.
+[background arg="res://Game Backgrounds/Hallway.png" fade="1.5"]
+As you entered the school halls, a sense of overwhelm washed over you. The familiar halls that you once knew now seemed unfamiliar and uncharted as you searched for your new homeroom.
+“Okay, so from here, I need to take a left, then go straight, turn right, and continue straight. That should lead me to my building."
+With these directions echoing in your mind, you embarked on your journey through the labyrinth of corridors. But just as you took a few steps, you suddenly came to a halt.
+"Okay, so left... straight, and umm..."
+“Where do I go again?”
+- Go Left
+	"No, wait... this doesn't feel right. I should try going the other way."
+- Go Right
+	"Yeah... this is probably the right path. Hopefully."
+- Walk through the wall in front of me
+	"If only I could actually walk through walls… Let's give it another shot. If I remember correctly, I should take a left here and continue straight. Then, I'll need to make a right before going straight again. So, right it is!"
+[background arg="res://Game Backgrounds/Staircase.png" fade="1.5" transition="Simple Fade"]
+"My poor legs... Why did my room have to be so far away?"
+After what felt like an eternity, you had finally found yourself on the right path, nearing your new homeroom. However, there was one final obstacle that stood in your way - three flights of stairs.
+Just as you were about to take another step, you heard a pair of rushing footsteps. Suddenly, someone collided with you, causing both of you to stumble and lose your footing.
+join Ezekiel (Worried) 1 [animation="Slide In Right"]
+"Hey! Watch out!"
+Ezekiel (Default Talking): "Sorry! Sorry! I'm in a rush!"
+leave Ezekiel [animation="Slide Out Left"]
+"Wow. Just wow."
+You let out an exasperated sigh as you watched the unnamed stranger dash past you without sparing you a second glance after their haphazard apology.
+join Roux (Resting Face) 1
+join Rue (Worried) 3
+Roux (Default Talking): "Looks like someone was in a rush, unlike a certain somebody I know."
+You felt a frown forming as you recognized the familiar voice. Raising your head, you looked up to see two students, two very familiar people, standing at the top of the first flight of stairs.
+Roux (Happy Talking): "Now, now, don't give me that look. Poor Roux and I were on our way to look for you out of the goodness of our hearts. But since you're here now, pray tell me, what took you so long?"
+Rue (Worried): "Yeah, you were taking forever! We thought you weren't going to show up!"
+Roux and Rue, your two closest friends. The three of you have been friends for as long as you can remember, which makes sense considering you were neighbors and practically grew up together.

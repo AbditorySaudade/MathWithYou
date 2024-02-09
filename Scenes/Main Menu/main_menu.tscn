@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=3 uid="uid://cfyjygnewrpba"]
+
+[ext_resource type="Texture2D" uid="uid://h0031sv1x7cs" path="res://Game Backgrounds/Lockers_Main Menu.png" id="1_yhvpb"]
+[ext_resource type="FontFile" uid="uid://bdcvvek8lgi58" path="res://Fonts/The Smile.otf" id="2_5okkf"]
+[ext_resource type="FontFile" uid="uid://dw7mqp1gjtppd" path="res://Fonts/Aesthetic Rainbow.otf" id="3_540rq"]
+[ext_resource type="AudioStream" uid="uid://dgiymvurr2riy" path="res://Game Soundtrack/home theme.mp3" id="4_oao4s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xci2u"]
+font = ExtResource("2_5okkf")
+font_size = 145
+font_color = Color(0.152941, 0.360784, 0.337255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rupon"]
+bg_color = Color(0.152941, 0.360784, 0.337255, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="Theme" id="Theme_tq4ly"]
+Button/styles/normal = SubResource("StyleBoxFlat_rupon")
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_yhvpb")
+expand_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.133333, 0.337255, 0.337255, 1)
+theme_override_fonts/font = ExtResource("2_5okkf")
+theme_override_font_sizes/font_size = 145
+text = "Math with You!"
+label_settings = SubResource("LabelSettings_xci2u")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 175)
+layout_mode = 2
+
+[node name="StoryModeButton" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_tq4ly")
+theme_override_fonts/font = ExtResource("3_540rq")
+theme_override_font_sizes/font_size = 65
+text = "Story Mode"
+
+[node name="GameModeButton" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_tq4ly")
+theme_override_fonts/font = ExtResource("3_540rq")
+theme_override_font_sizes/font_size = 65
+text = "Game Mode"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_oao4s")
+autoplay = true
